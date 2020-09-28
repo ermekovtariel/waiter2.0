@@ -1,0 +1,17 @@
+:root {
+    --bg: #242526;
+     --bg-accent:#284a4d;
+    --text-color: rgb(224, 145, 80);
+    --nav-size:60px;
+    --border:1px solid #474a4d;
+    --border-radius:8px;
+    --speed:500ms;
+}
+
+
+a{
+    color{
+        color:var(--text-color)
+        text-decoration:none;
+    }
+}

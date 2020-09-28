@@ -1,0 +1,50 @@
+.mg {
+    height: 30px;
+    width: 560px;
+    border-left: 2px solid #00cc11;
+    padding-left: 10px
+}
+
+.mb {
+    height: 30px;
+    width: 560px;
+    border-left: 2px solid #0081cc;
+    padding-left: 10px
+}
+
+.mw {
+    height: 30px;
+    width: 560px;
+    border-left: 2px solid #cc9c00;
+    padding-left: 10px
+}
+
+.mr {
+    height: 30px;
+    width: 560px;
+    border-left: 2px solid #cc0000;
+    padding-left: 10px
+}
+
+.surot {
+    max-width: 65px;
+    max-height: 40px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    margin: 10px;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-items: stretch;
+}
+
+.item-a {
+    justify-self: stretch;
+}
