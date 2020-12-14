@@ -1,0 +1,72 @@
+@import '../../styles/base/colors.scss';
+
+.login_form_block {
+  // text-align: center;
+  background: $white;
+  border-radius: 50px;
+  position: relative;
+  margin: auto;
+ 
+  padding: 0;
+  text-align: center;
+  .login_form_title {
+    color: #4d58de;
+    padding: 0;
+    p {
+      font-size: 30px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+  .login_form_message {
+    p {
+      font-size: 12px;
+      color: $pink;
+    }
+  }
+  .error {
+    font-size: 12px;
+    color: $pink;
+  }
+
+  .login_form {
+    .form-control {
+      .form-control-input {
+        margin: 12px 0;
+        input {
+          box-shadow: 0px 4px 8px $main_shadow;
+          border-radius: 8px;
+          padding:0 34px;
+          border: 1px solid #979797;
+          outline: none;
+          color: black;
+          width: 230px;
+          height: 56px;
+          &::placeholder {
+            color: #979797;
+            padding: 0 ;
+          }
+        }
+      }
+    }
+    button {
+      border: none;
+      background: linear-gradient(180deg, #6a11cb 0%, #4d58de 100%);
+      border-radius: 8px;
+      width: 300px;
+      height: 56px;
+      color: $white;
+      font-weight: bold;
+
+      font-size: 18px;
+      font-style: normal;
+      font-weight: normal;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: 0.2s ease-in-out;
+      outline: none;
+      
+    }
+  }
+}

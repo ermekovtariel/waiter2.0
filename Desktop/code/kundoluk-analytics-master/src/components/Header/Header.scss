@@ -1,0 +1,63 @@
+@import '../../styles/base/colors.scss';
+
+.header_block {
+  width: 100%;
+  .header {
+    padding: 0 36px;
+    display: flex;
+    justify-content: space-between;
+    // background: $main_background;
+    align-items: center;
+    // box-shadow: 0 4px 8px $main_shadow;
+    .header_left_block {
+      .header_left {
+        padding: 8px;
+      }
+    }
+    .header_right_block {
+      .header_right {
+        display: flex;
+        align-items: center;
+        .nav {
+          .nav_item {
+            margin: 0 16px;
+            img {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+
+        .user_profile {
+          display: flex;
+          align-items: center;
+          .user_profile_name {
+            span {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+
+              text-align: right;
+              letter-spacing: 0.2px;
+            }
+            margin-right: 14px;
+          }
+        }
+        .header_right_buttons {
+          display: flex;
+          align-items: center;
+          .header_right_items {
+            margin: 0 12px;
+          }
+        }
+        .header_right_divider {
+          width: 1px;
+          background-color: #dfe0eb;
+          height: 32px;
+          margin: 0 12px;
+        }
+      }
+    }
+  }
+}
+

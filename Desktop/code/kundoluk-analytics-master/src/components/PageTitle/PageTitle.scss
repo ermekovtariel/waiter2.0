@@ -1,0 +1,39 @@
+@import '../../styles/base/colors.scss';
+
+.page-title__block {
+  .page-title {
+    .page-title__go-back {
+      display: flex;
+      align-items: center;
+      outline: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      // svg {
+      // margin-right: 48px;
+      // }
+    }
+  }
+}
+.page-title__text {
+  font-size: 30px;
+  font-weight: bold;
+  color: $main_text;
+  transition: 0.2s;
+  line-height: 35px;
+  letter-spacing: 0.3px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+
+@media (min-width: 320px) and
+       (max-width: 812px){
+        .page-title__text{
+          font-size: 20px;
+          text-align: center;
+          line-height: 20px;
+          padding: 0 0 0 55px;
+        }
+      }
+      
