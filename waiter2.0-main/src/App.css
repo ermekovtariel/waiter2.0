@@ -1,0 +1,30 @@
+.app-wrapper {
+ padding-left: 100px;
+}
+.MuiAppBar-colorPrimary {
+  color: rgb(121, 119, 119) !important;
+ background-color: #fff !important; 
+ box-shadow: none !important;
+}
+
+.makeStyles-drawerPaper-20 {
+  background-color: #ECEFF8 !important;
+}
+.MuiInputBase-root {
+  border: 1px solid rgb(148, 147, 147);
+  border-radius: 10px;
+}
+.LeftBar_punkt__28AaB{
+  color:rgb(92, 92, 92) ;
+}
+.makeStyles-drawerPaper-12:hover{
+  background-color: #fff;
+}
+.makeStyles-drawerPaper-12 {
+  background-color: rgb(241, 241, 241) !important;
+  transition: .3s;
+}
+.ToolbarComponent-menuButton-2 {
+  display: none !important;
+  display: none !important;
+}

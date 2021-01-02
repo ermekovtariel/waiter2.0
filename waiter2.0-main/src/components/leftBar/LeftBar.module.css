@@ -1,0 +1,25 @@
+.punkt{
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.punkt:hover{
+    background-color: #fff;
+}
+.punkt *{
+    display: block ;
+}
+h2{
+    font-size: 1.4rem;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: grey;
+    margin-bottom: 0;
+    padding-bottom: 24px;
+    
+}
