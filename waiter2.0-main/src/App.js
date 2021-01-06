@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Teacher from './components/content/Teacher/Teacher';
-import Booking from './components/content/Booking/Booking';
-import Tasks from './components/content/Tasks/Tasks';
+import Teacher from './pages/Teacher/Teacher';
+import Booking from './pages/Booking/Booking';
+import Tasks from './pages/Tasks/Tasks';
 import ToolbarComponent from './components/header/Header';
 import LeftBar from './components/leftBar/LeftBar';
 import { Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-import QRCode from './components/content/QR-Code/QRCode'
+import QRCode from './pages/QR-Code/QRCode'
 function App() {
   return (
     <BrowserRouter>

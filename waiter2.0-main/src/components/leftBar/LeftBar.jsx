@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -10,11 +11,12 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import { Link } from 'react-router-dom';
 import CropFreeRoundedIcon from '@material-ui/icons/CropFreeRounded';
 
-const drawerWidth = 100;
+const drawerWidth = 90;
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    position:'rtl'
   },
   drawer: {
     width: drawerWidth,
@@ -45,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
         }}
         anchor="left"
       > 
-      <h2>LoGo</h2>
+      <h2>Menu</h2>
         <div className={classes.toolbar} />
         <List>
           <Link to='tasks' className={s.punkt}>

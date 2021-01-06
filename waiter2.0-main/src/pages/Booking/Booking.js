@@ -4,6 +4,7 @@ const Booking = () => {
     return (
         <div className='Booking'>
             Заказ
+            
         </div>
     )
 }
