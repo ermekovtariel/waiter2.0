@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Teacher from './pages/Teacher/Teacher';
 import Booking from './pages/Booking/Booking';
 import Tasks from './pages/Tasks/Tasks';

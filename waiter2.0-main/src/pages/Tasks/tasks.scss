@@ -1,0 +1,11 @@
+.menu{
+    div{
+        display: grid;
+        grid-template-rows: auto auto;
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

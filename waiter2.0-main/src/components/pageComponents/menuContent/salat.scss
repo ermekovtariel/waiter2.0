@@ -1,0 +1,25 @@
+@import '../../../styles/colors.scss';
+
+
+.card{
+    width: max-content;
+    border: 1px solid $primary;
+    padding: 12px;
+    span{
+        max-inline-size: fit-content;
+        padding: 4px 0;
+
+    }
+    button{
+        border: none;
+        background-color: $primary;
+        border-radius: 4px;
+    }
+}
+
+.book{
+    border: 1px solid $warning;
+    button{
+        background-color: $warning;
+    }
+}

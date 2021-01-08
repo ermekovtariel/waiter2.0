@@ -4,7 +4,7 @@ import QrReader from 'react-camera-qr'
 
 export default class Test extends Component {
     state = {
-        result: 'Nothing'
+        result: 'Отсканируйте QR-code'
     }
 
     handleScan = data => {
@@ -30,7 +30,9 @@ export default class Test extends Component {
                         margin: '0 auto'
                     }}
                 />
-                <p>{this.state.result}</p>
+                <p style={{textAlign:'center'}}>
+                    {this.state.result}
+                </p>
             </div>
         )
     }

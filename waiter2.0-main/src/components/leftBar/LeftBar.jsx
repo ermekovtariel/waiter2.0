@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import List from '@material-ui/core/List';
-import s from './LeftBar.module.css'
+import './LeftBar.scss'
 import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import AssignmentIcon from '@material-ui/icons/Assignment';
@@ -16,7 +16,7 @@ const drawerWidth = 90;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    position:'rtl'
+    position: 'rtl'
   },
   drawer: {
     width: drawerWidth,
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
- const LeftBar=()=> {
+const LeftBar = () => {
   const classes = useStyles();
 
   return (
@@ -46,24 +46,24 @@ const useStyles = makeStyles((theme) => ({
           paper: classes.drawerPaper,
         }}
         anchor="left"
-      > 
-      <h2>Menu</h2>
+      >
+        <h2>Menu</h2>
         <div className={classes.toolbar} />
         <List>
-          <Link to='tasks' className={s.punkt}>
+          <Link to='tasks' className='punkt'>
             <AssignmentIcon />
                 Меню
             </Link>
-          <Link to='booking' className={s.punkt}>
+          <Link to='booking' className='punkt'>
             <LocalMallOutlinedIcon />
                 Заказ
             </Link>
-            <Link to='teacher' className={s.punkt}>
-                <SupervisorAccountIcon />
+          <Link to='teacher' className='punkt'>
+            <SupervisorAccountIcon />
                 Персонал
             </Link>
-            <Link to='qr-code' className={s.punkt}>
-                <CropFreeRoundedIcon />
+          <Link to='qr-code' className='punkt'>
+            <CropFreeRoundedIcon />
                 QR-Code
             </Link>
         </List>

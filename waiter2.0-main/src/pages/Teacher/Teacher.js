@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Teacher = () => {
+const Teacher = (props) => {
     return (
         <div className='teacher'>
-            Персонал
+            Персонал:
+            {props.result}
         </div>
     )
 }
