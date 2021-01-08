@@ -32,6 +32,7 @@ export default class Test extends Component {
                 />
                 <p style={{textAlign:'center'}}>
                     {this.state.result}
+                    alert({this.state.result})
                 </p>
             </div>
         )
