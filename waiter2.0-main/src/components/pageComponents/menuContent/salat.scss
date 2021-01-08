@@ -5,15 +5,22 @@
     width: max-content;
     border: 1px solid $primary;
     padding: 12px;
+    margin: 4px 8px;
     span{
         max-inline-size: fit-content;
         padding: 4px 0;
 
     }
-    button{
-        border: none;
-        background-color: $primary;
-        border-radius: 4px;
+    div{
+        div{
+        }
+        button{
+            margin-left: 4px;
+            border: none;
+            background-color: $primary;
+            border-radius: 4ch;
+            width: max-content;
+        }
     }
 }
 

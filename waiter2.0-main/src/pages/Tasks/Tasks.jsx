@@ -14,6 +14,7 @@ const Tasks = () => {
                     <Salat />
                     <Salat />
                     <Salat />
+                    <Salat />
                 </div>
                 
             </div>

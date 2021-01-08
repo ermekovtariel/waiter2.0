@@ -1,7 +1,5 @@
 .menu{
     div{
-        display: grid;
-        grid-template-rows: auto auto;
         div{
             display: flex;
             flex-direction: row;
@@ -9,3 +7,12 @@
         }
     }
 }
+@media(max-width: 700px){
+    .menu{
+    div{
+        div{
+            justify-content: space-around;
+        }
+    }
+}
+} 

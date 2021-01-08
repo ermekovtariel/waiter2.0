@@ -1,24 +1,29 @@
 import React, { Component } from 'react'
 import './salat.scss'
 import classNames from 'classnames'
+import  Button  from './BookButton'
+
+function Salat(props) {
 
 
 
-export default class Salata extends Component {
-    render() {
-        return (
-            <span className={classNames(
+    return (
+        <span className={classNames(
             {
-                'book': this.props.book
+                'book': props.book
             },
             {
-                'card': this.props
+                'card': props
             },
             )}>
             /*IMG*/
             <span>Салат</span>
-            <button>Заказать</button>
+            <div>
+                <div>Цена:123</div>
+                <Button />
+            </div>
         </span>
-        )
-    }
+    )
 }
+
+export default Salat
