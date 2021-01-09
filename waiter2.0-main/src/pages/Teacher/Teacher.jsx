@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Teacher = (props) => {
+    
     return (
         <div className='teacher'>
             Персонал:
@@ -11,3 +12,4 @@ const Teacher = (props) => {
 
 
 export default Teacher
+

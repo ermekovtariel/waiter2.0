@@ -1,22 +1,29 @@
 import React from 'react';
-import Salat from '../../components/pageComponents/menuContent/Salat'
+
+import { Categories, Salat } from '../../components/pageComponents/menuContent/index';
+
 import './tasks.scss'
+
 const Tasks = () => {
     return (
         <div className='menu'>
             <div>
-                <h1>
-                    Салат
-                </h1>
+                <Categories
+                    onClick={(name) => console.log(name)}
+                    items={[
+                        'Пицца',
+                        'Бургер',
+                        'Напитки'
+                    ]} />
                 <div>
-                    <Salat  book/>
+                    <Salat book />
                     <Salat />
                     <Salat />
                     <Salat />
                     <Salat />
                     <Salat />
                 </div>
-                
+
             </div>
         </div>
     )
