@@ -10,14 +10,15 @@ function Salat(props) {
     var a = 'https://www.djurenko.com/wp-content/uploads/2011/06/domashnyaya-pitstsa_10.jpg'
 
     return (
-        <span className={classNames(
-            {
-                'book': props.book
-            },
-            {
-                'card': props
-            },
-        )}>
+        <span
+            className={classNames(
+                {
+                    'book': props.onClick
+                },
+                {
+                    'card': props
+                },
+            )}>
             <img src={a} alt="" srcset="" />
             <span>Пица</span>
             <div>

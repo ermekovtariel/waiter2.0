@@ -3,16 +3,25 @@ import React from 'react'
 import './salat.scss'
 
 function Categories({ items, onClick }) {
-    console.log(items)
-
+    const [activeItem, setActiveItem] = React.useState(null)
+    const onSelectItem = (index) => {
+        setActiveItem(index);
+    }
     return (
         <div>
             <ul>
+                <li onClick={() => onSelectItem(null)}>
+                    <h1>
+                        Все
+                    </h1>
+                </li>
                 {items.map((name, index) =>
                     <li
-                        onClick={() => onClick(name)}
+                        onClick={() => onSelectItem(index)}
                         key={`${index}_${name}`}>
-                        <h1>
+                        <h1
+                            className={activeItem === index ? 'active' : ''}
+                        >
                             {name}
                         </h1>
                     </li>

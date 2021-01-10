@@ -17,7 +17,7 @@ const Tasks = () => {
                     ]} />
                 <div>
                     <Salat book />
-                    <Salat />
+                    <Salat onClick={'book'} />
                     <Salat />
                     <Salat />
                     <Salat />

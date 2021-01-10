@@ -5,14 +5,16 @@
     width: max-content;
     border: 1px solid $primary;
     padding: 12px;
-    margin: 4px 8px;
+    margin: 4px 8px;     
+    cursor: pointer;
+        
     span{
         max-inline-size: fit-content;
         padding: 4px 0;
 
     }
     img{
-        width: 150px;
+        width: 120px;
     }
     div{
         div{
@@ -32,4 +34,7 @@
     button{
         background-color: $warning;
     }
+}
+.active{
+    background: $secondary;
 }
