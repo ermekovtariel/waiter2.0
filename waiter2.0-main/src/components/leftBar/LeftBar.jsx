@@ -42,7 +42,7 @@ const LeftBar = () => {
         classes={{
           paper: classes.drawerPaper,
         }}
-        anchor="left"
+        anchor="right"
       >
         <h2>Menu</h2>
         <div className={classes.toolbar} />

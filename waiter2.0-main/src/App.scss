@@ -4,8 +4,9 @@
 div{
     div{
       button{
+        z-index: 1000000;
         position: fixed;
-        right:  20px;
+        right:  13.5px;
         bottom: 50px;
         border: none;
         border-radius: 2px;
@@ -23,7 +24,7 @@ div{
 
 
 .app-wrapper {
- padding-left: 100px;
+ padding-right: 90px;
 }
 .MuiAppBar-colorPrimary {
   color: rgb(121, 119, 119) !important;

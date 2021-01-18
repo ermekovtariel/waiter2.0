@@ -8,7 +8,7 @@ const Tasks = () => {
     return (
         <div className='menu'>
             <div>
-              <PopapSort />
+                <PopapSort />
                 <Categories
                     onClick={(name) => console.log(name)}
                     items={[

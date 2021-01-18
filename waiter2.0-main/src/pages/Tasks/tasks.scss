@@ -35,10 +35,10 @@
                 cursor: pointer;
                 margin-left: 37px;
             }
-            ul{
+            ul{ z-index: 100000;
                 width: fit-content;
                 position: fixed;
-                right: 25px;
+                right: 162px;
                 top: 74px;
                 display: inline;
                 overflow-x: hidden;

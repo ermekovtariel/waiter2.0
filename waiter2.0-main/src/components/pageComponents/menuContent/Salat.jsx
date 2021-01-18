@@ -1,6 +1,6 @@
 import React from 'react'
-import {useEffect} from 'react'
-import {useState} from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 import './salat.scss'
 import classNames from 'classnames'
@@ -33,28 +33,28 @@ function Salat(props) {
   }, [])
 
 
-    var a = 'https://www.djurenko.com/wp-content/uploads/2011/06/domashnyaya-pitstsa_10.jpg';
+  var a = 'https://www.djurenko.com/wp-content/uploads/2011/06/domashnyaya-pitstsa_10.jpg';
 
-    return (<span>
-        {items.map(item => ( <span key={item.id}
-            className={classNames(
-                {
-                    'book': props.onClick
-                },
-                {
-                    'card': props
-                },
-            )}>
-            <img src={a} alt="" srcset="" />
-            <div>{item.title}</div>
-            <div>
-                <div>{item.userId}</div>
-                <BookButton />
-            </div>
-          
-          
-        </span>))}
-        </span>    )
+  return (<span>
+    {items.map(item => (<span key={item.id}
+      className={classNames(
+        {
+          'book': props.onClick
+        },
+        {
+          'card': props
+        },
+      )}>
+      <img src={a} alt="" />
+      <div>{item.title}</div>
+      <div>
+        <div>{item.userId}</div>
+        <BookButton />
+      </div>
+
+
+    </span>))}
+  </span>)
 }
 
 export default Salat
