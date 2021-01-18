@@ -3,7 +3,11 @@
 .menu{
     div{
         ul{
-            display: contents;
+            display: flex; 
+            width: 100%;
+            overflow: scroll;
+            padding-left: 0;
+            overflow-y: hidden;
             li{
                 margin: 4px;
                 display: flex;
@@ -24,15 +28,27 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            b{
+
+            }
+            h7{
+                cursor: pointer;
+                margin-left: 37px;
+            }
+            ul{
+                width: fit-content;
+                position: fixed;
+                right: 25px;
+                top: 74px;
+                display: inline;
+                overflow-x: hidden;
+                li{
+                    background: $secondary;
+                    border-radius: 4px;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                }
+            }
         }
     }
 }
-@media(max-width: 700px){
-    .menu{
-    div{
-        div{
-            justify-content: space-between;
-        }
-    }
-}
-} 

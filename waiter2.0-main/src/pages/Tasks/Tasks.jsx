@@ -1,13 +1,14 @@
 import React from 'react';
-
-import { Categories, Salat } from '../../components/pageComponents/menuContent/index';
+import { Categories, Salat, PopapSort } from '../../components/pageComponents/menuContent/index';
 
 import './tasks.scss'
 
 const Tasks = () => {
+
     return (
         <div className='menu'>
             <div>
+              <PopapSort />
                 <Categories
                     onClick={(name) => console.log(name)}
                     items={[
@@ -16,12 +17,9 @@ const Tasks = () => {
                         'Напитки'
                     ]} />
                 <div>
-                    <Salat book />
-                    <Salat onClick={'book'} />
                     <Salat />
-                    <Salat />
-                    <Salat />
-                    <Salat />
+
+
                 </div>
 
             </div>

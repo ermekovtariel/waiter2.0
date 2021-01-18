@@ -8,7 +8,6 @@ function Categories({ items, onClick }) {
         setActiveItem(index);
     }
     return (
-        <div>
             <ul>
                 <li onClick={() => onSelectItem(null)}>
                     <h1>
@@ -27,7 +26,6 @@ function Categories({ items, onClick }) {
                     </li>
                 )}
             </ul>
-        </div>
     )
 }
 
