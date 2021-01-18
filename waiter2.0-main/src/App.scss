@@ -1,3 +1,27 @@
+@import './styles/colors.scss';
+
+
+div{
+    div{
+      button{
+        position: fixed;
+        right:  20px;
+        bottom: 50px;
+        border: none;
+        border-radius: 2px;
+        background-color: $warning;
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
 .app-wrapper {
  padding-left: 100px;
 }
@@ -28,3 +52,6 @@
   display: none !important;
   display: none !important;
 }
+
+
+

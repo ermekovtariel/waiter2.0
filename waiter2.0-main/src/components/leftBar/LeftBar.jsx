@@ -1,15 +1,12 @@
 import React from 'react';
-
 import { makeStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import List from '@material-ui/core/List';
 import './LeftBar.scss'
-import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
-import AssignmentIcon from '@material-ui/icons/Assignment';
 import { Link } from 'react-router-dom';
-import CropFreeRoundedIcon from '@material-ui/icons/CropFreeRounded';
+import {
+  Drawer, CssBaseline, List, SupervisorAccountIcon,
+  LocalMallOutlinedIcon, AssignmentIcon, CropFreeRoundedIcon
+}
+  from './index'
 
 const drawerWidth = 90;
 

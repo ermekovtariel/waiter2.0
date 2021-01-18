@@ -8,12 +8,14 @@ import LeftBar from './components/leftBar/LeftBar';
 import { Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import QRCode from './pages/QR-Code/QRCode'
+import FinishPrice from './components/pageComponents/FinishPrice';
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <div className='app-wrapper'>
           <ToolbarComponent />
+          <FinishPrice />
           <LeftBar className='leftbar' />
           <div className='content'>
             <Route path="/Teacher" render={() => <Teacher />} />{" "}

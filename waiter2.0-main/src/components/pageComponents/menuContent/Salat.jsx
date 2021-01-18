@@ -22,7 +22,7 @@ function Salat(props) {
             <img src={a} alt="" srcset="" />
             <span>Пица</span>
             <div>
-                <div>Цена:123 сом</div>
+                <div>123 сом</div>
                 <BookButton />
             </div>
         </span>

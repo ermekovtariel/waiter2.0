@@ -20,11 +20,13 @@
         div{
         }
         button{
-            margin-left: 4px;
             border: none;
             background-color: $primary;
             border-radius: 4ch;
             width: max-content;
+            position: absolute;
+            left: 110px;
+            bottom: 8px;
         }
     }
 }
