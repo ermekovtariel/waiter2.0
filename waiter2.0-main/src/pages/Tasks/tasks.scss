@@ -42,6 +42,9 @@
                 top: 74px;
                 display: inline;
                 overflow-x: hidden;
+                border: 1px solid $light;
+                background: $light;
+                border-radius: 4px;
                 li{
                     background: $secondary;
                     border-radius: 4px;
@@ -51,4 +54,8 @@
             }
         }
     }
+}
+.active{
+    color: $warning;
+    font-weight: bold;
 }

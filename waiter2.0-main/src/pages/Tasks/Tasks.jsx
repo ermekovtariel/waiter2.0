@@ -3,12 +3,15 @@ import { Categories, Salat, PopapSort } from '../../components/pageComponents/me
 
 import './tasks.scss'
 
-const Tasks = () => {
-
+const Tasks = ({items}) => {
     return (
         <div className='menu'>
             <div>
-                <PopapSort />
+                <PopapSort items={[
+                    'популярности',
+                    'цене',
+                    'алфавиту'
+                ]}/>
                 <Categories
                     onClick={(name) => console.log(name)}
                     items={[
@@ -17,11 +20,9 @@ const Tasks = () => {
                         'Напитки'
                     ]} />
                 <div>
-                    <Salat />
-
-
+                    {items.map((obj,idx)=>(
+                    <Salat key={idx} {...obj} />))}
                 </div>
-
             </div>
         </div>
     )
