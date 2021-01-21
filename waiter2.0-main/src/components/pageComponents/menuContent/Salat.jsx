@@ -2,7 +2,6 @@ import React from 'react'
 import './salat.scss'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-
 import { BookButton } from './index'
 
  

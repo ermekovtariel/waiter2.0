@@ -8,9 +8,9 @@ const Tasks = ({items}) => {
         <div className='menu'>
             <div>
                 <PopapSort items={[
-                    'популярности',
-                    'цене',
-                    'алфавиту'
+                    {name:'популярности',type:'popular'},
+                    {name:'цене',type:'price'},
+                    {name:'алфавиту',type: 'alphabet'}
                 ]}/>
                 <Categories
                     onClick={(name) => console.log(name)}
@@ -20,7 +20,7 @@ const Tasks = ({items}) => {
                         'Напитки'
                     ]} />
                 <div>
-                    {items.map((obj,idx)=>(
+                    {items && items.map((obj,idx)=>(
                     <Salat key={idx} {...obj} />))}
                 </div>
             </div>

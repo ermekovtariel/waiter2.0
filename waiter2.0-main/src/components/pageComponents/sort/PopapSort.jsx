@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './PopapSort.scss';
 
 
@@ -10,7 +10,7 @@ function PopapSort({items}) {
         setActiveItem(index)
         setVisiblePopub(false)
     }
-    const activeLebel = items[activeItem]
+    const activeLebel = items[activeItem].name;
     const sortRef = React.useRef();
     const toggleVisiblePopup = () => {
         setVisiblePopub(!visiblePopub)
@@ -22,25 +22,25 @@ function PopapSort({items}) {
     }
     React.useEffect(() => {
         document.body.addEventListener('click', handleOutsideClick)
-        console.log(sortRef.current)
+        
     }, [])
 
 
     return (
         <div ref={sortRef}>
             <b>Сортировать по: </b>
-            <h7
+            <h6
                 onClick={() => toggleVisiblePopup()}
-            > {activeLebel}</h7>
+            > {activeLebel}</h6>
             {visiblePopub &&
                 <div>
                     <ul>
-                        {items && items.map((name, index) =>(
+                        {items && items.map((obj, index) =>(
                             <li
-                                key={`${index}_${name}`}
+                                key={`${index}_${obj.type}`}
                                 className={activeItem === index ? 'active' : ''}
                                 onClick={()=>onSelectItem(index)}>
-                                {name}  
+                                {obj.name}  
                             </li>
                         ))}
                     </ul>
