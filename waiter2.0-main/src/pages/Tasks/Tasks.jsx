@@ -1,32 +1,47 @@
-import React from 'react';
-import { Categories, Salat, PopapSort } from '../../components/pageComponents/menuContent/index';
+import React, { useEffect } from "react";
+import {
+  Categories,
+  Salat,
+  PopapSort,
+} from "../../components/pageComponents/menuContent/index";
+import { useSelector, useDispatch, useStore } from "react-redux";
+import { getPizzas } from "../../redux/pizzas/action";
+import "./tasks.scss";
 
-import './tasks.scss'
+const Tasks = () => {
+  //   const pizzas = useSelector((state) => state.pizzas);
+  const store = useStore();
+  const state = store.getState();
+  const dispatch = useDispatch();
 
-const Tasks = ({items}) => {
-    return (
-        <div className='menu'>
-            <div>
-                <PopapSort items={[
-                    {name:'популярности',type:'popular'},
-                    {name:'цене',type:'price'},
-                    {name:'алфавиту',type: 'alphabet'}
-                ]}/>
-                <Categories
-                    onClick={(name) => console.log(name)}
-                    items={[
-                        'Пицца',
-                        'Бургер',
-                        'Напитки'
-                    ]} />
-                <div>
-                    {items && items.map((obj,idx)=>(
-                    <Salat key={idx} {...obj} />))}
-                </div>
-            </div>
-        </div>
-    )
-}
+  const getPizzasList = () => {
+    dispatch(getPizzas());
+  };
 
+  useEffect(() => getPizzasList(), []);
 
-export default Tasks
+  let itemsList = (state.pizzas.items).map((item, idx) => (
+    <Salat key={idx} {...item}/>
+  ));
+
+  return (
+    <div className="menu">
+      <div>
+        <PopapSort
+          items={[
+            { name: "популярности", type: "popular" },
+            { name: "цене", type: "price" },
+            { name: "алфавиту", type: "alphabet" },
+          ]}
+        />
+        <Categories
+          onClick={(name) => console.log(name)}
+          items={["Пицца", "Бургер", "Напитки"]}
+        />
+        <div>{itemsList}</div>
+      </div>
+    </div>
+  );
+};
+
+export default Tasks;
