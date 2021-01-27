@@ -17,13 +17,25 @@ export const bookedPizzas = (state = initialState, action) => {
         ...state,
         box: [...state.box, action.payload],
       };
-
+    case "DEL_BOOKED_PIZZAS":
+      return {
+        ...state,
+        box: [
+          ...state.box.slice(0, action.payload),
+          ...state.box.slice(action.payload + 1)
+        ],
+      };
     case "SET_TOTAL_PRICE":
       return {
         ...state,
-
         totalPrice: state.totalPrice + action.payload,
       };
+    case "DEL_TOTAL_PRICE":
+        return {
+              ...state,
+              totalPrice: state.totalPrice - action.payload  ,
+              
+            };
     default:
       return state;
   }

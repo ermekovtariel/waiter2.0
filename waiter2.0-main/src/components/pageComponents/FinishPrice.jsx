@@ -1,15 +1,12 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getPrice } from "../../redux/bascket/action";
+import React from "react";
+import { useSelector } from "react-redux";
 
 function FinishPrice() {
-  const dispatch = useDispatch();
   const state = useSelector((state) => state);
-  console.log("state", state);
   return (
     <button>
     <>
-      <p>{state.busket.totalPrice} сом</p>
+      <p>{state.busket.totalPrice}</p>
       {/* <p>
         {state.busket.box.map((item,idx) => (
           <p key={idx}>{item.name}</p>

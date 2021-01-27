@@ -1,16 +1,25 @@
 import React from "react";
-import { useDispatch, useSelector, useStore } from "react-redux";
+import { useSelector } from "react-redux";
 import classNames from 'classnames'
 import DeleteButton from '../../components/pageComponents/menuContent/DeleteButton'
+import {delFromBusket} from '../../redux/pizzasBox/delAction'
+import { useDispatch} from "react-redux";
 
 const Booking = () => {
-  const dispatch = useDispatch();
   const state = useSelector((state) => state);
-  console.log("state", state);
-  return <div className="Booking">
+  // console.log("stateawdwadawdawd", state.busket.box.item);
+  const dispatch = useDispatch();
+
+  const removeFromBusketList = (item) => {
+    dispatch(delFromBusket(item));
+  };
+  return <div
+  className="Booking">
         {state.busket.box.map((item,idx) => (
-          <span>
-          <span key={item.id}
+          <span
+          onClick={()=>removeFromBusketList(item)}
+          key={item.id}>
+          <span 
             className={classNames('card')}>
             <img src={item.imageUrl} alt="" />
             <div>{item.name}</div>
@@ -27,19 +36,3 @@ const Booking = () => {
 };
 
 export default Booking;
-
-
-
-{/* <span>
-    <span key={item.id}
-      className={classNames('card')}>
-      <img src={item.imageUrl} alt="" />
-      <div>{item.name}</div>
-      <div>
-        <div>{item.price}</div>
-        <BookButton />
-      </div>
-    </span>
-    <div>      
-    </div>
-  </span>*/}

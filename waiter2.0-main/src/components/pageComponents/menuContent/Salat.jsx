@@ -1,20 +1,17 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import './salat.scss'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { BookButton } from './index'
 import { addToBusket } from "../../../redux/pizzasBox/action";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
  
 
 export default function Salat(props) {
-  const [busket, setBusket] = useState([]);
   const dispatch = useDispatch();
   
 
-  function addItemToBusket(item){
-    console.log(item)
-  }
+
   const addBusketList = (item) => {
     dispatch(addToBusket(item));
   };
@@ -34,7 +31,8 @@ export default function Salat(props) {
     <div>      
     </div>
 </span>
-  )
+)
+  
 Salat.propTypes={
   name: PropTypes.string,
   imageUrl: PropTypes.string,
