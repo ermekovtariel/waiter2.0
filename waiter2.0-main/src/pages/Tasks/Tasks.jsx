@@ -27,6 +27,8 @@ const Tasks = () => {
 
 
 
+
+
   return (
     <div className="menu">
       <div>
@@ -38,6 +40,7 @@ const Tasks = () => {
           ]}
         />
         <Categories
+          onClick={(name) => console.log(name)}
           items={["Пицца", "Бургер", "Напитки"]}
         />
         <div>{itemsList}</div>

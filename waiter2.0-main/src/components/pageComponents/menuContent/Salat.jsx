@@ -7,7 +7,7 @@ import { addToBusket } from "../../../redux/pizzasBox/action";
 import { useDispatch, useSelector } from "react-redux";
  
 
-function Salat(props) {
+export default function Salat(props) {
   const [busket, setBusket] = useState([]);
   const dispatch = useDispatch();
   
@@ -33,9 +33,8 @@ function Salat(props) {
     </span>
     <div>      
     </div>
-  </span>)
-}
-
+</span>
+  )
 Salat.propTypes={
   name: PropTypes.string,
   imageUrl: PropTypes.string,
@@ -48,6 +47,6 @@ Salat.defaultProps={
   price: '0',
   types: [],
 }
+  
 
-
-export default Salat
+}
