@@ -6,7 +6,7 @@ function FinishPrice() {
   return (
     <button>
     <>
-      <p>{state.busket.totalPrice}</p>
+      <p>{state.busket.totalPrice} сом</p>
       {/* <p>
         {state.busket.box.map((item,idx) => (
           <p key={idx}>{item.name}</p>

@@ -1,0 +1,39 @@
+@import '../../styles/colors.scss';
+.Booking{
+span{
+    .card{
+        width: min-content;
+        border: 1px solid $primary;
+        padding: 12px;
+        margin: 4px 8px;  
+        border-style: dashed;
+        font-size: xx-small;
+            img{
+                width: 120px;
+            }
+            div{
+                margin-bottom: 12px;
+            }  
+            div{
+                div{
+                    position: absolute; 
+                    left: 12px;
+                    bottom: 8px;
+                    background: $warning;
+                    border: none;
+                    border-radius: 4px;
+                    margin: 0;
+                    padding: 0 4ch;
+                }
+                button{
+                    position: absolute; 
+                    right: 12px;
+                    bottom: 8px;
+                    border: none;
+                    background-color: $primary;
+                    border-radius: 4ch;
+                    width: max-content;
+                }
+            }
+    }
+}}

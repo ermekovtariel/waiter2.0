@@ -9,21 +9,29 @@ const initialState = {
   ],
   isLoaded: false,
 };
-console.log("reducer of booking busket");
+
 export const bookedPizzas = (state = initialState, action) => {
+
   switch (action.type) {
+    
+    
+    
+    
+    
     case "BOOKED_PIZZAS":
-      return {
+    return {
         ...state,
         box: [...state.box, action.payload],
       };
+      
     case "DEL_BOOKED_PIZZAS":
+    
       return {
         ...state,
-        box: [
-          ...state.box.slice(0, action.payload),
-          ...state.box.slice(action.payload + 1)
-        ],
+        box:
+        state.box.filter(item => {
+          return item.id !== action.payload;
+        })
       };
     case "SET_TOTAL_PRICE":
       return {

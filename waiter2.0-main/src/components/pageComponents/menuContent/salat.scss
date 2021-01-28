@@ -1,14 +1,13 @@
 @import '../../../styles/colors.scss';
 
 span{
-    display: contents;
+    display: inline-flex;
 .card{
     width: min-content;
     border: 1px solid $primary;
     padding: 12px;
     margin: 4px 8px;     
     cursor: pointer;    
-    max-inline-size: fit-content;
     img{
         width: 120px;
     }

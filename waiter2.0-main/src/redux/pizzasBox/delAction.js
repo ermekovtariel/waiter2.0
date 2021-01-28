@@ -1,11 +1,11 @@
-export const delFromBusket = ({price, id}) => async (dispatch) => {
+export const delFromBusket = (item) => async (dispatch) => {
     dispatch({
         type: "DEL_TOTAL_PRICE",
-        payload: price,
+        payload: item.price,
       });
     dispatch({
         type: "DEL_BOOKED_PIZZAS",
-        payload: id,
+        payload: item.id,
       });
   };
   

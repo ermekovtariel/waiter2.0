@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import DeleteButton from '../../components/pageComponents/menuContent/DeleteButton'
 import {delFromBusket} from '../../redux/pizzasBox/delAction'
 import { useDispatch} from "react-redux";
+import './booking.scss';
 
 const Booking = () => {
   const state = useSelector((state) => state);
