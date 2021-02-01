@@ -11,21 +11,13 @@ const initialState = {
 };
 
 export const bookedPizzas = (state = initialState, action) => {
-
   switch (action.type) {
-    
-    
-    
-    
-    
     case "BOOKED_PIZZAS":
     return {
         ...state,
         box: [...state.box, action.payload],
       };
-      
     case "DEL_BOOKED_PIZZAS":
-    
       return {
         ...state,
         box:
